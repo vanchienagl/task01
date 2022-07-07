@@ -1,0 +1,50 @@
+/*------------------------------------------------------------
+Css of link1 page
+------------------------------------------------------------*/
+.p-anchorlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 49px;
+}
+
+.p-anchoritem {
+    width: 100%;
+}
+
+.p-anchorlink {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-00aeef;
+    color: $color-white;
+    border-radius: 7px;
+    font-size: 16px;
+    gap: 0 5px;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 8px;
+        background: url("/_public/assets/img/icon-arrow2.png") no-repeat 0 center;
+    }
+}
+
+.section-anchor {
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 8px;
+        margin-bottom: 26px;
+        border-bottom: 2px solid $color-cccccc;
+    }
+
+    &__caption {
+        background-color: $color-ece6e6;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 14px;
+    }
+}

@@ -5,5 +5,14 @@ list
 /*
 ------------------------------------------------------------*/
 .c-list1 {
-	
+    &__image {
+        img {
+            width: 100%;
+        }
+        margin-bottom: 15px;
+    }
+
+    &__label {
+        margin-bottom: 17px;
+    }	
 }

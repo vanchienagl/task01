@@ -1,0 +1,106 @@
+.p-link2 {
+    &__btnlink {
+        height: 80px;
+        width: 100%;
+        display: block;
+        background-color: $color-6dcff6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        font-weight: bold;
+        border: 2px solid $color-black;
+        box-sizing: border-box;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: calc(20 /15);
+
+        span {
+            color: $color-c40000;
+        }
+
+        &--box {
+            padding: 19px 28px;
+            border: 1PX solid $color-11638a;
+            border-radius: 5px;
+
+            p {
+                color: $color-11638a;
+
+                &::before,
+                &::after {
+                    content: "";
+                    width: 17px;
+                    height: 15px;
+                    display: inline-block;
+                }
+
+                &::before {
+                    background: url("/_public/assets/img/icon-quocte-left.png") no-repeat 0 center;
+                    margin-right: 5px;
+                }
+
+                &::after {
+                    background: url("/_public/assets/img/icon-quocte-right.png") no-repeat 0 center;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        &--box2 {
+            padding: 19px 28px;
+            border: 1PX solid $color-f5989d;
+            border-radius: 5px;
+
+            p {
+                color: $color-f5989d;
+
+                &::before,
+                &::after {
+                    content: "";
+                    width: 17px;
+                    height: 15px;
+                    display: inline-block;
+                }
+
+                &::before {
+                    background: url("/_public/assets/img/icon-quocte-left2.png") no-repeat 0 center;
+                    margin-right: 5px;
+                }
+
+                &::after {
+                    background: url("/_public/assets/img/icon-quocte-right2.png") no-repeat 0 center;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        &--comment {
+            color: $color-11638a;
+        }
+
+        &--comment2 {
+            color: $color-f5989d;
+        }
+
+        &--leaf {
+            color: $color-f5989d;
+        }
+    }
+
+    &__listtext {
+        font-size: 15px;
+        line-height: calc(30 /15);
+
+        span {
+            color: $color-f5989d;
+            margin-right: 6px;
+        }
+
+        &--sub {
+            margin-left: 36px;
+        }
+    }
+}

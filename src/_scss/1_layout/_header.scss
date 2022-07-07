@@ -1,29 +1,27 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: relative;
-    background: rgba(255, 255, 255, 0.9);
-}
-/* Main menu
-------------------------------------------------------------*/
-.c-gnav {
-    ul {
+    .l-container {
+        height: 89px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $color-a8a8a8;
     }
 
-    li {
-        display: inline-block;
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 0 32px;
 
-        + li {
-            margin-left: 20px;
+        &--link {
+            text-decoration: none;
+            color: $color-black;
+            line-height: calc(21 / 14);
+
+            &.is-active {
+                font-weight: bold;
+            }
         }
-    }
-
-    a {
-        font-size: 1.6rem;
-        text-transform: capitalize;
     }
 }

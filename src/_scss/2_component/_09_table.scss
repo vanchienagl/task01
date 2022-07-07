@@ -4,6 +4,66 @@ table
 
 /*
 ------------------------------------------------------------*/
+.c-table {
+    width: 490px;
+}
+
+.c-table,
+.c-table th,
+.c-table td {
+    border: 1px solid $color-cccccc;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+
+.c-table th {
+    padding: 12px 17px;
+    font-weight: normal;
+}
+
+.c-table td {
+    padding: 9px 13px;
+}
+
 .c-table1 {
-	
+    th {
+        background-color: $color-acd373;
+        color: $color-white;
+    }
+
+    td:nth-child(1) {
+        background-color: $color-ece6e6;
+    }
+
+    tr:last-child {
+        td:nth-child(1) {
+            background-color: $color-6dcff6;
+        }   
+    }
+
+    &--full {
+        width: 100%;
+
+        td {
+            padding: 9px 36px;
+        }
+
+        td:nth-child(1) {
+            background-color: $color-ebebeb;
+        }
+
+        tr:last-child {
+            td:nth-child(1) {
+                background-color: $color-ebebeb;
+            }   
+        }
+    }
+}
+
+.c-table2 {
+    th {
+        background-color: $color-d3d7d9;
+        padding: 10px 12px;
+    }
 }

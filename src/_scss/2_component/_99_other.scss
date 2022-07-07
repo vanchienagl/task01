@@ -4,3 +4,19 @@ other
 
 /*
 ------------------------------------------------------------*/
+.c-textlink {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.c-textlink--blue {
+    color: $color-blue;
+}
+
+.c-textlink--red {
+    color: $color-red;
+}
+
+.c-textlink--orange {
+    color: $color-orange;
+}

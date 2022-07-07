@@ -1,0 +1,16 @@
+.c-labelcate {
+    color: $primary-color;
+    padding: 0 22px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+
+    &--big {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    &--small {
+        height: 30px;
+    }
+}

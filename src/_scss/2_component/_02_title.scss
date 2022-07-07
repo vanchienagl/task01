@@ -5,6 +5,47 @@ title
 
 /*
 ------------------------------------------------------------*/
-.c-title1 {
-	
+.c-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: $color-black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-width: 1px 1px 1px 7px;
+    border-style: solid;
+    padding-left: 20px;
+    margin-bottom: 30px;
+
+    &--news {
+        border-color: $color-ffd800;
+        background-color: $color-fff9da;
+    }
+
+    &--feature {
+        border-color: $color-f68e56;
+        background-color: $color-fff2f2;
+    }
+
+    &--blog {
+        border-color: $color-6dcff6;
+        background-color: $color-ebebeb;
+    }
+
+    &--title1 {
+        border-color: $color-11638a;
+        border-width: 0 0 0 7px;
+        background-color: $color-bcd5e1;
+        color: $color-11638a;
+        margin-bottom: 21px;
+    }
+
+    &--title2 {
+        border-color: $color-f5989d;
+        border-width: 0 0 0 7px;
+        background-color: $color-ffe8e9;
+        color: $color-f5989d;
+        margin-bottom: 22px;
+    }
 }
+  

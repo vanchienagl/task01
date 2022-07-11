@@ -18,6 +18,7 @@
         border: 2px solid $color-black;
         box-sizing: border-box;
         box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     &__text {
@@ -39,26 +40,32 @@
                 &::before,
                 &::after {
                     content: "";
-                    width: 17px;
-                    height: 15px;
                     display: inline-block;
                 }
 
                 &::before {
                     background: url("/_public/assets/img/icon-quocte-left.png") no-repeat 0 center;
-                    margin-right: 5px;
+                    width: 16px;
+                    height: 15px;
+                    margin-right: 3px;
+                    position: relative;
+                    top: 3px;
                 }
 
                 &::after {
                     background: url("/_public/assets/img/icon-quocte-right.png") no-repeat 0 center;
-                    margin-left: 5px;
+                    width: 17px;
+                    height: 14px;
+                    margin-left: 2px;
+                    position: relative;
+                    top: 2px;
                 }
             }
         }
 
         &--box2 {
-            padding: 19px 28px;
-            border: 1PX solid $color-f5989d;
+            padding: 19px 27px;
+            border: 1px solid $color-f5989d;
             border-radius: 5px;
 
             p {
@@ -70,16 +77,19 @@
                     width: 17px;
                     height: 15px;
                     display: inline-block;
+                    position: relative;
                 }
 
                 &::before {
                     background: url("/_public/assets/img/icon-quocte-left2.png") no-repeat 0 center;
-                    margin-right: 5px;
+                    margin-right: 2px;
+                    top: 3px;
                 }
 
                 &::after {
                     background: url("/_public/assets/img/icon-quocte-right2.png") no-repeat 0 center;
-                    margin-left: 5px;
+                    margin-left: 3px;
+                    top: 3px;
                 }
             }
         }
@@ -102,10 +112,26 @@
 
         &--comment2 {
             color: $color-f5989d;
+
+            img {
+                position: relative;
+                top: 1px;
+            }
         }
 
         &--leaf {
             color: $color-f5989d;
+
+            img {
+                position: relative;
+                top: 1px;
+            }
+
+            &2 {
+                img {
+                    top: 0;
+                }
+            }
         }
     }
 

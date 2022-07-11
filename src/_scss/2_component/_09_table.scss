@@ -20,7 +20,7 @@ table
 
 .c-table th {
     padding: 12px 17px;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 .c-table td {
@@ -42,24 +42,27 @@ table
     tr:last-child {
         td:nth-child(1) {
             background-color: $color-6dcff6;
-        }   
+        }
     }
 
     &--full {
         width: 100%;
 
         td {
-            padding: 9px 36px;
+            padding: 10px;
+            width: 274px;
+            line-height: 14.4px;
         }
 
         td:nth-child(1) {
             background-color: $color-ebebeb;
+            width: 173px;
         }
 
         tr:last-child {
             td:nth-child(1) {
                 background-color: $color-ebebeb;
-            }   
+            }
         }
     }
 }

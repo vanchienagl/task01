@@ -14,6 +14,10 @@
     margin-bottom: 4px;
 }
 
+.u-mb5 {
+    margin-bottom: 5px;
+}
+
 .u-mb6 {
     margin-bottom: 6px;
 }
@@ -24,6 +28,10 @@
 
 .u-mb10 {
     margin-bottom: 10px;
+}
+
+.u-mb11 {
+    margin-bottom: 11px;
 }
 
 .u-mb13 {
@@ -50,6 +58,10 @@
     margin-bottom: 20px;
 }
 
+.u-mb21 {
+    margin-bottom: 21px;
+}
+
 .u-mb22 {
     margin-bottom: 22px;
 }
@@ -73,11 +85,17 @@
 .u-mb30 {
     margin-bottom: 30px;
 }
+
 .u-mb31 {
     margin-bottom: 31px;
 }
+
 .u-mb34 {
-    margin-bottom: 36px;
+    margin-bottom: 34px;
+}
+
+.u-mb35 {
+    margin-bottom: 35px;
 }
 
 .u-mb36 {
@@ -115,6 +133,7 @@
 .u-mb51 {
     margin-bottom: 51px;
 }
+
 .u-mb52 {
     margin-bottom: 52px;
 }
@@ -178,6 +197,7 @@
 .u-mb125 {
     margin-bottom: 125px;
 }
+
 .u-mb109 {
     margin-bottom: 109px;
 }
@@ -196,4 +216,35 @@
 
 .bgcolor-ffdfdf {
     background-color: #ffdfdf;
+}
+
+//------------------------------------------------------------
+// letter spacing
+//------------------------------------------------------------
+.u-lettspac01 {
+    letter-spacing: 0.1px;
+}
+
+.u-lettspac02 {
+    letter-spacing: 0.2px;
+}
+
+.u-lettspac03 {
+    letter-spacing: 0.3px;
+}
+
+.u-lettspac04 {
+    letter-spacing: 0.4px;
+}
+
+.u-lettspac05 {
+    letter-spacing: 0.5px;
+}
+
+//------------------------------------------------------------
+// relative
+//------------------------------------------------------------
+.u-relleft1 {
+    position: relative;
+    left: 1px;
 }

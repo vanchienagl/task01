@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Breadcrumb
 ------------------------------------------------------------*/
 .c-breadcrumb {
@@ -26,10 +33,17 @@
         span {
             line-height: 1;
         }
-        &--arrow{
+
+        &--arrow {
             position: relative;
             top: -1px;
             left: 2px;
+        }
+
+        &--last {
+            span {
+                letter-spacing: -0.4px;
+            }
         }
     }
 
@@ -53,8 +67,5 @@
         border-width: 1px 0;
         border-style: solid;
         border-color: $color-cccccc;
-        .c-breadcrumb__item:last-of-type{
-            background-color: red;
-        }
     }
 }

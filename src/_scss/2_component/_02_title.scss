@@ -10,7 +10,11 @@ title
     font-weight: bold;
     color: $color-black;
     height: 50px;
+    display: box;
+    display: flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border-width: 1px 1px 1px 7px;
     border-style: solid;
@@ -46,6 +50,7 @@ title
         background-color: $color-ffe8e9;
         color: $color-f5989d;
         margin-bottom: 22px;
+        position: relative;
+        top: 1px;
     }
 }
-  

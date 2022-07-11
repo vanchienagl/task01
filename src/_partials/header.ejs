@@ -1,29 +1,30 @@
 <header class="c-header u-mb29">
   <div class="l-container">
-    <h1 class="c-header__logo">
-      <a href="<%= BASE_URL %>index.html">
-        <img src="./assets/img/logo.jpg" alt="Logo">
-      </a>
-    </h1>
+    <a class="c-header__logo" href="<%= BASE_URL %>index.html">
+      <img src="./assets/img/logo.jpg" alt="Logo">
+    </a>
 
-    <ul class="c-header__menu">
-      <% if (typeof linklists != 'undefined') { %>
-        <% linklists.main && linklists.main.forEach(link => { %>
-          <li class="c-header__menu--item">
-            <a <% if (link.current || link.active) { %>class="c-header__menu--link is-active"<% }else{ %>  class="c-header__menu--link"<% } %> href="<%= link.url %>"><%= link.title %></a>
-            <% if (link.links) { %>
-              <ul>
-                <% link.links.forEach(child_link => { %>
-                  <li>
-                    <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } %>
-          </li>
-        <% }) %>
-      <% } %>
-    </ul>
-
+    <nav class="c-header__menu">
+      <ul class="c-header__menu--list">
+        <% if (typeof linklists !='undefined' ) { %>
+          <% linklists.main && linklists.main.forEach(link=> { %>
+            <li class="c-header__menu--item">
+              <a <% if (link.current || link.active) { %>class="c-header__menu--link is-active"<% }else{ %>
+                  class="c-header__menu--link"<% } %> href="<%= link.url %>"><%= link.title %></a>
+              <% if (link.links) { %>
+                <ul>
+                  <% link.links.forEach(child_link=> { %>
+                    <li>
+                      <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%=
+                              child_link.title %></a>
+                    </li>
+                    <% }) %>
+                </ul>
+                <% } %>
+            </li>
+            <% }) %>
+              <% } %>
+      </ul>
+    </nav>
   </div>
 </header>

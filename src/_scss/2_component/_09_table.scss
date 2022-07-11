@@ -14,6 +14,7 @@ table
     border: 1px solid $color-cccccc;
     border-collapse: collapse;
     text-align: center;
+    line-height: 1;
 
 }
 
@@ -23,17 +24,19 @@ table
 }
 
 .c-table td {
-    padding: 9px 13px;
+    padding: 10px 13px;
 }
 
 .c-table1 {
     th {
         background-color: $color-acd373;
         color: $color-white;
+        padding: 11px 17px;
     }
 
     td:nth-child(1) {
         background-color: $color-ece6e6;
+        padding: 10px 12px;
     }
 
     tr:last-child {
@@ -64,6 +67,6 @@ table
 .c-table2 {
     th {
         background-color: $color-d3d7d9;
-        padding: 10px 12px;
+        padding: 10.3px 12px;
     }
 }

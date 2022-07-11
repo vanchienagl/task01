@@ -1,13 +1,14 @@
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 /* layout
 ------------------------------------------------------------*/
 body {
     font-family: $main-fonts;
-    //font-size: 1.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
     min-width: $base-width;
-    font-size: 14px;
     line-height: calc(20 / 14);
     color: $primary-color;
     @include sp {

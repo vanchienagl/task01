@@ -3,14 +3,14 @@ footer
 ------------------------------------------------------------*/
 .c-footer {
     &__content {
-        padding: 34px 0;
+        padding: 39px 0 37px;
         background-color: $color-fafafa;
 
         .l-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 0 50px;
+            gap: 0 48px;
         }
     }
 
@@ -19,9 +19,10 @@ footer
     }
 
     &__menulink {
-        display: flex;
+        display: inline-flex;
         align-items: center;
         gap: 0 5px;
+        line-height: 1;
 
         &::before {
             content: "";
@@ -39,36 +40,45 @@ footer
     }
 
     &__menubox:nth-child(2) &__menulink {
+        gap: 0 7px;
+
         &::before {
-            width: 7px;
-            height: 12px;
+            width: 5px;
+            height: 7px;
             background: url("/_public/assets/img/icon-arrow.png") no-repeat 0 center;
         }
     }
 
     &__menubox:nth-child(3) &__menulink {
+        position: relative;
+        top: 2px;
+        left: 2px;
+
         &::before {
             width: 11px;
             height: 11px;
             background: url("/_public/assets/img/icon-link.png") no-repeat 0 center;
+            
         }
     }
 
     &__menutitle {
         font-weight: bold;
         border-bottom: 1px solid $color-cccccc;
-        padding-bottom: 6px;
-        margin-bottom: 4px;
-        font-size: 14px;
+        padding-bottom: 8px;
+        margin-bottom: 2px;
+        font-size: 1.4rem;
+        line-height: 1;
     }
 
     &__bottom {
-        padding: 18px 0 24px;
+        padding: 20px 0 24px;
         border-top: 1px solid $color-cccccc;
 
         &--copyright {
             text-align: center;
-            font-size: 12px;
+            font-size: 1.2rem;
+            line-height: 1;
         }
     }
 

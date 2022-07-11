@@ -2,24 +2,41 @@
 Css of link1 page
 ------------------------------------------------------------*/
 .p-anchorlist {
+    display: box;
+    display: flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 0 49px;
 }
 
 .p-anchoritem {
     width: 100%;
+
+    &:nth-child(2) {
+        position: relative;
+        left: -1px;
+    }
 }
 
 .p-anchorlink {
     height: 45px;
+    display: box;
+    display: flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: $color-00aeef;
     color: $color-white;
-    border-radius: 7px;
+    border-radius: 5px;
     font-size: 16px;
     gap: 0 5px;
 
@@ -29,6 +46,9 @@ Css of link1 page
         width: 10px;
         height: 8px;
         background: url("/_public/assets/img/icon-arrow2.png") no-repeat 0 center;
+        position: relative;
+        left: -1px;
+        top: -1px;
     }
 }
 
@@ -42,9 +62,10 @@ Css of link1 page
     }
 
     &__caption {
+        line-height: 1;
         background-color: $color-ece6e6;
         font-size: 16px;
         font-weight: bold;
-        padding: 10px 14px;
+        padding: 12px 14px;
     }
 }

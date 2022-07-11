@@ -2,25 +2,37 @@
 ------------------------------------------------------------*/
 .c-header {
     .l-container {
-        height: 89px;
+        height: 90px;
+        display: box;
+        display: flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         border-bottom: 1px solid $color-a8a8a8;
     }
 
     &__menu {
-        display: flex;
-        align-items: center;
-        gap: 0 32px;
+        &--list {
+            display: box;
+            display: flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            gap: 0 32px;
+        }
 
         &--link {
             text-decoration: none;
             color: $color-black;
-            line-height: calc(21 / 14);
 
             &.is-active {
                 font-weight: bold;
+                letter-spacing: -0.2px;
             }
         }
     }

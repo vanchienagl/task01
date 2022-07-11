@@ -2,34 +2,59 @@
 ------------------------------------------------------------*/
 .c-breadcrumb {
     &__list {
+        display: box;
+        display: flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 0 9px;
     }
 
     &__item {
+        display: box;
+        display: flexbox;
         display: flex;
-        align-items: baseline;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        a {
+            text-decoration: underline;
+        }
 
         span {
             line-height: 1;
         }
+        &--arrow{
+            position: relative;
+            top: -1px;
+            left: 2px;
+        }
     }
 
     &__image {
+        width: 15px;
         margin-right: 5px;
     }
 
     &__link {
+        display: box;
+        display: flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         color: $color-black;
     }
 
     &--bottom {
-        padding: 10px 0;
+        padding: 10px 0 9px;
         border-width: 1px 0;
         border-style: solid;
         border-color: $color-cccccc;
+        .c-breadcrumb__item:last-of-type{
+            background-color: red;
+        }
     }
 }

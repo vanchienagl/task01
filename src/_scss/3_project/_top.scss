@@ -31,7 +31,6 @@ Css of home page
         -webkit-box-align: start;
         -ms-flex-align: start;
         align-items: flex-start;
-        gap: 0 40px;
 
         &:not(:last-child) {
             margin-bottom: 30px;
@@ -46,6 +45,8 @@ Css of home page
 
     &__image {
         position: relative;
+        width: 350px;
+        margin-right: 40px;
     }
 
     &__label {
@@ -55,8 +56,7 @@ Css of home page
     }
 
     &__info {
-        -webkit-box-flex: 1;
-        flex: 1;
+        width: calc(100% - 390px);
         min-height: 190px;
         display: box;
         display: flexbox;
@@ -89,6 +89,23 @@ Css of home page
             background-color: $color-afafaf;
             text-decoration: none;
             letter-spacing: -0.8px;
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+                /* add your IE10-IE11 css here */
+                padding-top: 5px;
+            }
+        }
+    }
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+        /* add your IE10-IE11 css here */
+        &__info {
+            position: relative;
+        }
+
+        &__link {
+            position: absolute;
+            bottom: 0;
+            right: 0;
         }
     }
 

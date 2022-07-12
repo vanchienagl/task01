@@ -23,6 +23,10 @@ btn
     color: $color-white;
     text-decoration: none;
     text-align: center;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+        /* add your IE10-IE11 css here */
+        padding-top: 7px;
+    }
 
     &--1 {
         background-color: $color-ffd800;

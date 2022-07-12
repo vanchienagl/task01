@@ -17,8 +17,10 @@
         font-weight: bold;
         border: 2px solid $color-black;
         box-sizing: border-box;
-        box-sizing: border-box;
-        box-sizing: border-box;
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+            /* add your IE10-IE11 css here */
+            padding-top: 10px;
+        }
     }
 
     &__text {

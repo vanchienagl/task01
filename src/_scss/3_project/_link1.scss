@@ -1,10 +1,13 @@
 /*------------------------------------------------------------
 Css of link1 page
 ------------------------------------------------------------*/
-.section-anchor__text{
-    font-size: 1.4rem;
-    font-weight: 500;
+.section-anchor {
+    &__text {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
 }
+
 .p-anchorlist {
     display: box;
     display: flexbox;
@@ -15,11 +18,12 @@ Css of link1 page
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    gap: 0 49px;
+    margin-left: -49px;
 }
 
 .p-anchoritem {
     width: 100%;
+    margin-left: 49px;
 
     &:nth-child(2) {
         position: relative;
@@ -42,7 +46,6 @@ Css of link1 page
     color: $color-white;
     border-radius: 5px;
     font-size: 16px;
-    gap: 0 5px;
 
     &::before {
         content: "";
@@ -53,6 +56,7 @@ Css of link1 page
         position: relative;
         left: -1px;
         top: -1px;
+        margin-right: 5px;
     }
 }
 

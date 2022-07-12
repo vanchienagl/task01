@@ -3,30 +3,33 @@ footer
 ------------------------------------------------------------*/
 .c-footer {
     &__content {
-        padding: 39px 0 37px;
+        padding: 38px 0 37px;
         background-color: $color-fafafa;
 
         .l-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 0 48px;
         }
     }
 
     &__menubox {
         width: 100%;
+
+        &:not(:last-child) {
+            margin-right: 48px;
+        }
     }
 
     &__menulink {
         display: inline-flex;
         align-items: center;
-        gap: 0 5px;
         line-height: 1;
 
         &::before {
             content: "";
             display: inline-block;
+            margin-right: 5px;
         }
     }
 
@@ -40,12 +43,11 @@ footer
     }
 
     &__menubox:nth-child(2) &__menulink {
-        gap: 0 7px;
-
         &::before {
             width: 5px;
             height: 7px;
             background: url("/_public/assets/img/icon-arrow.png") no-repeat 0 center;
+            margin-right: 7px;
         }
     }
 
@@ -58,7 +60,9 @@ footer
             width: 11px;
             height: 11px;
             background: url("/_public/assets/img/icon-link.png") no-repeat 0 center;
-            
+            position: relative;
+            top: 1px;
+            left: -1px;
         }
     }
 
@@ -69,6 +73,10 @@ footer
         margin-bottom: 2px;
         font-size: 1.4rem;
         line-height: 1;
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+            /* add your IE10-IE11 css here */
+            margin-bottom: 8px;  
+        }
     }
 
     &__bottom {

@@ -4,6 +4,10 @@
     height: 35px;
     display: inline-flex;
     align-items: center;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+        /* add your IE10-IE11 css here */
+        padding-top: 5px;
+    }
 
     &--big {
         font-size: 1.6rem;

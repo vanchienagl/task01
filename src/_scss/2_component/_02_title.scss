@@ -20,6 +20,10 @@ title
     border-style: solid;
     padding-left: 20px;
     margin-bottom: 30px;
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+        /* add your IE10-IE11 css here */
+        padding-top: 10px;
+    }
 
     &--news {
         border-color: $color-ffd800;

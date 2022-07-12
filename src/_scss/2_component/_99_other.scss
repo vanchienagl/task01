@@ -6,17 +6,39 @@ other
 ------------------------------------------------------------*/
 .c-textlink {
     font-size: 1.4rem;
-    text-decoration: underline;
+    display: inline-block;
+    line-height: 0;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 100%;
+        position: relative;
+        top: 3px;
+    }
 }
 
 .c-textlink--blue {
     color: $color-blue;
+
+    &::after {
+        border-bottom: 1px solid currentColor;
+    }
 }
 
 .c-textlink--red {
     color: $color-red;
+
+    &::after {
+        border-bottom: 1px solid currentColor;
+    }
 }
 
 .c-textlink--orange {
     color: $color-orange;
+
+    &::after {
+        border-bottom: 1px solid currentColor;
+    }
 }
